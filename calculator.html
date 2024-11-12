@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="inp">
+        <input class="place" id="num1" type="number" placeholder="Первое число">
+        <div class="operators" id="operator_btns">
+            <button class="button__op" id="plus" onclick="op='+'">+</button>
+            <button class="button__op" id="minus" onclick="op='-'">-</button>
+            <button class="button__op" id="times" onclick="op='*'">x</button>
+            <button class="button__op" id="divide" onclick="op='/'">:</button>
+        </div>
+        <input class="place" id="num2" type="number" placeholder="Второе число">
+    </div>
+    <br>
+    <div class="numbers">
+        <button class="calc__btn" id="one" onclick="">1</button>
+        <button class="calc__btn" id="two" onclick="">2</button>
+        <button class="calc__btn" id="three" onclick="">3</button><br>
+        <button class="calc__btn" id="four" onclick="">4</button>
+        <button class="calc__btn" id="five" onclick="">5</button>
+        <button class="calc__btn" id="six" onclick="">6</button><br>
+        <button class="calc__btn" id="seven" onclick="">7</button>
+        <button class="calc__btn" id="eight" onclick="">8</button>
+        <button class="calc__btn" id="nine" onclick="">9</button><br>
+        <button class="num0" id="zero" onclick="">0</button>
+    </div>
+    <div class="result">
+        <button onclick="func()">Посчитать</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
